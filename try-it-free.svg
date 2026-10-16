@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="52" viewBox="0 0 260 52" fill="none">
+  <defs>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6A00"/>
+      <stop offset="50%" stop-color="#FF7A00"/>
+      <stop offset="100%" stop-color="#FF5000"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="260" height="52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#FF6A00" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <!-- Background with rounded corners -->
+  <rect x="2" y="2" width="256" height="48" rx="10" fill="url(#btnGrad)" filter="url(#shadow)"/>
+  <rect x="2.5" y="2.5" width="255" height="47" rx="9.5" stroke="#FFE2CC" stroke-width="1" stroke-opacity="0.35"/>
+  <!-- Bolt Icon -->
+  <g transform="translate(28, 14)">
+    <path d="M12.5 1.5L3.5 13.5H11.5L9.5 22.5L18.5 10.5H10.5L12.5 1.5Z" fill="#FFFFFF"/>
+  </g>
+  <!-- Text -->
+  <text x="142" y="31.5" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" letter-spacing="0.3">Try it Free Now →</text>
+</svg>
