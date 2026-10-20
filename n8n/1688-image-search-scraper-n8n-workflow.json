@@ -1,0 +1,253 @@
+{
+  "name": "1688 Reverse Image Search Scraper: Photo to Factory API — Automated Extraction to CSV & Sheets (UnitBytes)",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## ⚡ 1688 Reverse Image Search Scraper: Photo to Factory API — Automated n8n Pipeline\n**Powered by [UnitBytes on Apify](https://apify.com/unitbytes/1688-image-search-scraper?fpr=939u3w&fp_sid=n8n_io)** ($0.005 / item)\n\n### ⚙️ How It Works\nThis workflow runs on a schedule, calls the **[1688-image-search-scraper Apify Actor](https://apify.com/unitbytes/1688-image-search-scraper?fpr=939u3w&fp_sid=n8n_io)** via its synchronous REST endpoint, normalizes the extracted fields (`id, offerId, searchType, searchImage, imageId`), and exports a clean CSV file.\n\n### 🚀 30-Second Setup Instructions\n1. **Get your free Apify API Token**: Open [1688-image-search-scraper on Apify Store](https://apify.com/unitbytes/1688-image-search-scraper?fpr=939u3w&fp_sid=n8n_io) and copy your API token from **Settings → Integrations**.\n2. **Paste your token & search parameters**: Double-click the **\"1. Set Apify Token & Input\"** node and replace `YOUR_APIFY_API_TOKEN` with your token.\n3. **Click \"Test Workflow\"**: The HTTP Request node calls the synchronous UnitBytes Apify endpoint, normalizes the extracted records, and exports a clean CSV file ready for Google Sheets, Airtable, Slack, or OpenAI.\n\n📖 **Documentation & Schema Reference**: [https://unitbytes.com/actors/1688-image-search-scraper/](https://unitbytes.com/actors/1688-image-search-scraper/)",
+        "height": 380,
+        "width": 520,
+        "color": 4
+      },
+      "id": "041d4277-334c-5f30-ad43-3818a8aa3e05",
+      "name": "Sticky Note — Setup Guide",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        180,
+        80
+      ]
+    },
+    {
+      "parameters": {
+        "content": "### 📊 Connect Your Destination\nThe **\"3. Normalize Output Fields\"** node outputs flat records (`id, offerId, searchType, searchImage, imageId`).\n\n- **Google Sheets / Airtable**: Connect a Google Sheets (`Append or Update Row`) node after Step 3.\n- **Slack / Telegram / Email Alerts**: Connect a Filter node + Slack node to alert your team on new deals or reviews.\n- **AI Agent / OpenAI**: Connect an OpenAI / LLM Chain node to summarize or classify extracted items.",
+        "height": 220,
+        "width": 420,
+        "color": 5
+      },
+      "id": "15562320-8fd1-58e4-98ee-9bf35b1cfda6",
+      "name": "Sticky Note — Destinations",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        880,
+        140
+      ]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 24
+            }
+          ]
+        }
+      },
+      "id": "6de898d5-58f0-5ecc-a333-099c5cb920a8",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        220,
+        480
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "75ab7e3e-e88d-52cf-ab5d-1e004bbeff2c",
+              "name": "apifyToken",
+              "value": "YOUR_APIFY_API_TOKEN",
+              "type": "string"
+            },
+            {
+              "id": "2d9ddf12-c21a-56f9-9c6b-6975e5affa28",
+              "name": "actorInput",
+              "value": "{\"imageUrls\": [\"https://img.alicdn.com/img/ibank/O1CN01gQo0hx2LY27U4AagC_!!3937219703-0-C2M.jpg\"], \"maxItems\": 30, \"detailLevel\": \"full\", \"proxyConfiguration\": {\"useApifyProxy\": true}}",
+              "type": "object"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "fde617ed-bd65-568f-9bc0-c4c5b015fafc",
+      "name": "1. Set Apify Token & Input",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        460,
+        480
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://api.apify.com/v2/acts/unitbytes~1688-image-search-scraper/run-sync-get-dataset-items?token={{ $json.apifyToken }}&format=json&clean=true",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.actorInput) }}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "05651dfc-14d3-5f5d-b61c-4e3f545c1a81",
+      "name": "2. Run UnitBytes (1688-image-search-scraper)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        700,
+        480
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "06968bca-81de-59b0-8fbb-f6bcf58d51b9",
+              "name": "id",
+              "value": "={{ $json.id }}",
+              "type": "string"
+            },
+            {
+              "id": "0619cf2e-9b8a-5ae5-817f-28f7e3f7af93",
+              "name": "offerId",
+              "value": "={{ $json.offerId }}",
+              "type": "string"
+            },
+            {
+              "id": "64c413c1-14b0-528a-ad88-3ea3f12578b4",
+              "name": "searchType",
+              "value": "={{ $json.searchType }}",
+              "type": "string"
+            },
+            {
+              "id": "12dfd38a-c6e9-5800-b056-2b691ab5daa2",
+              "name": "searchImage",
+              "value": "={{ $json.searchImage }}",
+              "type": "string"
+            },
+            {
+              "id": "c189780e-56c5-5378-915e-a5c9078ddd08",
+              "name": "imageId",
+              "value": "={{ $json.imageId }}",
+              "type": "string"
+            },
+            {
+              "id": "6701d81a-7587-5300-983d-752e5b67fd95",
+              "name": "imageSearchUrl",
+              "value": "={{ $json.imageSearchUrl }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "id": "bbb2ad1a-efbf-5fe7-a4dc-988f469517ab",
+      "name": "3. Normalize Output Fields",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        940,
+        480
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "csv",
+        "options": {
+          "fileName": "1688-image-search-scraper-dataset-export.csv"
+        }
+      },
+      "id": "2a302264-a021-5f52-9ed5-04168b04d96b",
+      "name": "4. Export to CSV File",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        1180,
+        480
+      ]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "1. Set Apify Token & Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1. Set Apify Token & Input": {
+      "main": [
+        [
+          {
+            "node": "2. Run UnitBytes (1688-image-search-scraper)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2. Run UnitBytes (1688-image-search-scraper)": {
+      "main": [
+        [
+          {
+            "node": "3. Normalize Output Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3. Normalize Output Fields": {
+      "main": [
+        [
+          {
+            "node": "4. Export to CSV File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false,
+    "instanceId": "030f9420-0ca8-5240-8fe8-208e287a8b19"
+  },
+  "tags": [
+    {
+      "name": "Web Scraping"
+    },
+    {
+      "name": "Apify"
+    },
+    {
+      "name": "UnitBytes"
+    },
+    {
+      "name": "B2B Wholesale & Supply Chain"
+    }
+  ]
+}
