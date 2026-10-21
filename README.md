@@ -3,6 +3,7 @@
 <div align="center">
 
 [![Available on Apify](https://img.shields.io/badge/Available_on-Apify-28B52A?style=for-the-badge&logo=apify&logoColor=white)](https://apify.com/unitbytes/1688-scraper?fpr=939u3w&fp_sid=gh_1688)
+[![Available on RapidAPI](https://img.shields.io/badge/Real--Time_REST_API-RapidAPI-0055DA?style=for-the-badge&logo=rapidapi&logoColor=white)](https://rapidapi.com/unitbytes/api/1688-wholesale-factory-data1)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)](#)
 [![Success Rate](https://img.shields.io/badge/Success_Rate-99%25+-brightgreen?style=for-the-badge)](#)
 [![Zero Login](https://img.shields.io/badge/Account_Required-None-blue?style=for-the-badge)](#)
@@ -11,7 +12,7 @@
 
 **The most advanced 1688 and 1688.com (Alibaba Wholesale) scraper and supplier intelligence tool for Amazon FBA merchants, Shopify brands, dropshippers, procurement managers, and cross-border e-commerce sellers. Extract true factory bulk prices from 1688 / 1688.com, tiered volume discounts, minimum order quantities (MOQ), complete SKU variant matrices with matching photos, Amazon FBA packaging weights, and verified Super Factory (超级工厂) audit badges — 100% autonomously with Zero Login & Zero Chinese Phone Number Required.**
 
-[**🚀 Try it Live on Apify**](https://apify.com/unitbytes/1688-scraper?fpr=939u3w&fp_sid=gh_1688) • [**📖 Documentation**](https://apify.com/unitbytes/1688-scraper?fpr=939u3w&fp_sid=gh_1688) • [**💬 Support**](https://github.com/unitbytes/1688-Wholesale-Scraper-API/issues)
+[**🚀 Try it Live on Apify**](https://apify.com/unitbytes/1688-scraper?fpr=939u3w&fp_sid=gh_1688) • [**⚡ Real-Time REST API (RapidAPI)**](https://rapidapi.com/unitbytes/api/1688-wholesale-factory-data1) • [**📖 Documentation**](https://apify.com/unitbytes/1688-scraper?fpr=939u3w&fp_sid=gh_1688) • [**💬 Support**](https://github.com/unitbytes/1688-Wholesale-Scraper-API/issues)
 
 </div>
 
@@ -41,7 +42,8 @@ This repository contains ready-to-run **Python SDK scripts**, **1-click n8n auto
 | Extraction Engine | 🐍 Python SDK Quickstart | ⚡ n8n Workflow Template | 📊 Sample Output | 🚀 Cloud Console |
 | :--- | :--- | :--- | :---: | :---: |
 | **1688 Scraper & Price Monitor: Wholesale & Product API**<br><sub>[`unitbytes/1688-scraper`](https://apify.com/unitbytes/1688-scraper?fpr=939u3w&fp_sid=gh_1688_wholesale) • [Full Schema](https://unitbytes.com/actors/1688-scraper/) • [Engineering Playbook](https://unitbytes.com/blog/how-to-scrape-1688-without-account-sourcing-guide/)</sub> | [`examples/run_1688_scraper.py`](examples/run_1688_scraper.py) | [`n8n/1688-scraper-n8n-workflow.json`](n8n/1688-scraper-n8n-workflow.json)<br><sub>[⚡ Official on n8n.io ↗](https://n8n.io/workflows/21097-extract-1688com-product-data-to-csv-with-unitbytes-and-apify/)</sub> | [`JSON`](samples/1688-scraper-sample.json) · [`CSV`](samples/1688-scraper-sample.csv) | [⚡ **Run on Apify**](https://apify.com/unitbytes/1688-scraper?fpr=939u3w&fp_sid=gh_1688_wholesale) |
-| **1688 Reverse Image Search Scraper: Photo to Factory API**<br><sub>[`unitbytes/1688-image-search-scraper`](https://apify.com/unitbytes/1688-image-search-scraper?fpr=939u3w&fp_sid=gh_1688_wholesale) • [Full Schema](https://unitbytes.com/actors/1688-image-search-scraper/) • [Engineering Playbook](https://unitbytes.com/blog/how-to-scrape-1688-without-account-sourcing-guide/)</sub> | [`examples/run_1688_image_search_scraper.py`](examples/run_1688_image_search_scraper.py) | [`n8n/1688-image-search-scraper-n8n-workflow.json`](n8n/1688-image-search-scraper-n8n-workflow.json)<br><sub>[⚡ Official on n8n.io ↗](https://n8n.io/workflows/21097-extract-1688com-product-data-to-csv-with-unitbytes-and-apify/)</sub> | [`JSON`](samples/1688-image-search-scraper-sample.json) · [`CSV`](samples/1688-image-search-scraper-sample.csv) | [⚡ **Run on Apify**](https://apify.com/unitbytes/1688-image-search-scraper?fpr=939u3w&fp_sid=gh_1688_wholesale) |
+| **1688 Reverse Image Search Scraper: Photo to Factory API**<br><sub>[`unitbytes/1688-image-search-scraper`](https://apify.com/unitbytes/1688-image-search-scraper?fpr=939u3w&fp_sid=gh_1688_wholesale) • [Full Schema](https://unitbytes.com/actors/1688-image-search-scraper/) • [Engineering Playbook](https://unitbytes.com/blog/how-to-scrape-1688-without-account-sourcing-guide/)</sub> | [`examples/run_1688_image_search_scraper.py`](examples/run_1688_image_search_scraper.py) | [`n8n/1688-image-search-scraper-n8n-workflow.json`](n8n/1688-image-search-scraper-n8n-workflow.json)<br><sub>[⚡ Official on n8n.io ↗](https://n8n.io/workflows/21097-extract-1688com-product-data-to-csv-with-unitbytes-and-apify/)</sub> | [`JSON`](samples/1688-image-search-scraper-sample.json) · [`CSV`](samples/1688-image-search-scraper-sample.csv) | [⚡ **Run on Apify**](https://apify.com/unitbytes/1688-scraper?fpr=939u3w&fp_sid=gh_1688_wholesale) |
+| **1688 Real-Time Synchronous REST API (RapidAPI Gateway)**<br><sub>[`unitbytes/1688-wholesale-factory-data1`](https://rapidapi.com/unitbytes/api/1688-wholesale-factory-data1) • 7 B2B Endpoints (Search, Channels, Product, SKU Calculator, Batch, Supplier, FBA CBM Logistics) • Sub-Second Edge Cache • **$0 Free Tier**</sub> | [`examples/run_1688_rapidapi.py`](examples/run_1688_rapidapi.py) | HTTP Request Node (`GET /v1/1688/*`) | [`JSON`](samples/1688-scraper-sample.json) | [⚡ **Try on RapidAPI**](https://rapidapi.com/unitbytes/api/1688-wholesale-factory-data1) |
 
 - 🤖 **Cursor, Windsurf & Claude Code MCP Ready:** Includes [`.cursor/mcp.json`](.cursor/mcp.json) pre-configured with `https://mcp.apify.com` so AI coding agents can invoke these UnitBytes scrapers natively.
 - 💡 **Using n8n?** Explore our official creator profile at **[n8n.io/creators/unitbytes](https://n8n.io/creators/unitbytes/)** or copy all 23 pre-built scraping workflows (`Ctrl+V`) at **[unitbytes.com/n8n](https://unitbytes.com/n8n/)**.
@@ -262,7 +264,7 @@ console.log(items.slice(0, 2));
 
 ---
 
-### 🌐 cURL Example
+### 🌐 cURL Example (Apify Batch Run)
 
 ```bash
 curl -X POST "https://api.apify.com/v2/acts/unitbytes~1688-scraper/runs?token=YOUR_APIFY_TOKEN" \
@@ -273,6 +275,31 @@ curl -X POST "https://api.apify.com/v2/acts/unitbytes~1688-scraper/runs?token=YO
     "maxItems": 30,
     "superFactoryOnly": true
   }'
+```
+
+---
+
+### ⚡ Real-Time Synchronous REST API (RapidAPI Hub — Sub-Second Response)
+
+Need **instant synchronous `GET` responses (`<500ms` live / `<150ms` cached)** for a live Shopify importer, ERP, or Amazon FBA calculator instead of an async batch job? Use our official **7-Endpoint REST API on RapidAPI Hub**:
+
+👉 **[Test Live in the RapidAPI Playground ($0 Free Tier Available)](https://rapidapi.com/unitbytes/api/1688-wholesale-factory-data1)** (`x-rapidapi-host: 1688-wholesale-factory-data1.p.rapidapi.com`)
+
+| Category | Endpoint | Method | Description |
+| :--- | :--- | :---: | :--- |
+| **1. Product & Channel Search** | `/v1/1688/search` | `GET` | Search 1688 wholesale offers by Chinese/English keyword with `super_factory`, `factory_inspection`, price range, province, and sales sorting. |
+| **1. Product & Channel Search** | `/v1/1688/channel` | `GET` | Browse `onePiece` (1-Piece Dropshipping / 一件代发), `superFactory`, `crossBorder`, and `taohuo` specialty channels. |
+| **2. Product & SKU Intelligence** | `/v1/1688/product` | `GET` | Complete all-in-one B2B product detail: tiered pricing, MOQ, SKU matrix, FBA packaging specs, and supplier profile by `offer_id` or `url`. |
+| **2. Product & SKU Intelligence** | `/v1/1688/product/skus` | `GET` | Extract SKU variation table, bookable stock, and calculate active wholesale tier unit price (`matchedTierUnitPrice`) & total order cost (`estimatedOrderTotalCny`) for `order_quantity`. |
+| **2. Product & SKU Intelligence** | `/v1/1688/products/batch` | `GET` | Concurrent batch lookup for multiple 1688 products in one call (`offer_ids` comma-separated). |
+| **3. Factory & Logistics Intelligence** | `/v1/1688/supplier` | `GET` | Verify manufacturer credentials (`superFactory`, `factoryInspection`, `trustPass`), repurchase rate, and 4D merchant ratings. |
+| **3. Factory & Logistics Intelligence** | `/v1/1688/product/logistics` | `GET` | Extract per-SKU packaging dimensions & weight and calculate total shipment gross weight (`totalGrossWeightKg`), volume (`totalVolumeCbm`), and air volumetric weight (`airVolumetricWeightKg`) for `order_quantity`. |
+
+```bash
+curl --request GET \
+  --url 'https://1688-wholesale-factory-data1.p.rapidapi.com/v1/1688/product?offer_id=743829104821' \
+  --header 'x-rapidapi-host: 1688-wholesale-factory-data1.p.rapidapi.com' \
+  --header 'x-rapidapi-key: YOUR_RAPIDAPI_KEY'
 ```
 
 ---
