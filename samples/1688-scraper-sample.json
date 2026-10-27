@@ -1,0 +1,89 @@
+[
+  {
+    "id": "680000000001",
+    "offerId": "680000000001",
+    "url": "https://detail.1688.com/offer/680000000001.html",
+    "title": "适用苹果x手机壳iPhoneX保护套iponex新款ipx液态硅胶ix外壳纯色",
+    "page": 1,
+    "position": 1,
+    "nextPage": 2,
+    "price": 1.8,
+    "currency": "CNY",
+    "priceDisplay": "1.40 - 1.80",
+    "minOrderQuantity": 1,
+    "totalStock": 43557,
+    "salesVolume": "已售10万+件",
+    "repurchaseRate": "38.5%",
+    "superFactory": true,
+    "factoryInspection": true,
+    "tieredPrices": [
+      {
+        "minQuantity": 1,
+        "maxQuantity": 499,
+        "price": 1.8,
+        "unit": "件"
+      },
+      {
+        "minQuantity": 500,
+        "maxQuantity": 999,
+        "price": 1.6,
+        "unit": "件"
+      },
+      {
+        "minQuantity": 1000,
+        "maxQuantity": null,
+        "price": 1.4,
+        "unit": "件"
+      }
+    ],
+    "pictureUrl": "https://img.alicdn.com/img/ibank/O1CN01TfAMgq2KExhpOwxbE_!!2214687799526-0-cib.jpg",
+    "images": [
+      "https://img.alicdn.com/img/ibank/O1CN01TfAMgq2KExhpOwxbE_!!2214687799526-0-cib.jpg",
+      "https://img.alicdn.com/img/ibank/O1CN01NhwImi2KExhrALHsS_!!2214687799526-0-cib.jpg"
+    ],
+    "skuMatrix": [
+      {
+        "skuId": "5066775858930",
+        "specId": "5405c1ade1d9d2e9ba0c2ad101623132",
+        "variant": "苹果X-XS【草紫色】",
+        "price": 1.8,
+        "stock": 4967,
+        "imageUrl": "https://img.alicdn.com/img/ibank/O1CN01cn9PGM2KExhk07FyO_!!2214687799526-0-cib.jpg"
+      },
+      {
+        "skuId": "4893701804460",
+        "specId": "2b4174c3e987a9eca9a9c741f3c495ad",
+        "variant": "苹果X-XS【石墨黑】",
+        "price": 1.8,
+        "stock": 4389,
+        "imageUrl": "https://img.alicdn.com/img/ibank/O1CN01juMWTc2KExhpOvLom_!!2214687799526-0-cib.jpg"
+      }
+    ],
+    "packaging": [
+      {
+        "skuId": "4893701804460",
+        "variant": "苹果X-XS【石墨黑】",
+        "weightGrams": 30.0,
+        "lengthCm": 15.0,
+        "widthCm": 8.0,
+        "heightCm": 1.2,
+        "volumeCm3": 144.0
+      }
+    ],
+    "shipping": {
+      "dispatchLocation": "广东省汕头市",
+      "deliveryPromise": "承诺48小时发货",
+      "dispatchTime": "预计2小时发货",
+      "isFreeShipping": true
+    },
+    "supplier": {
+      "companyName": "东莞市智造数码配件有限公司",
+      "name": "东莞市智造数码配件有限公司",
+      "city": "东莞市",
+      "province": "广东省",
+      "trustPass": true,
+      "shopUrl": "https://winport.m.1688.com/page/index.html?memberId=b2b-220000000000000001"
+    },
+    "detailLevel": "full"
+  }
+]
