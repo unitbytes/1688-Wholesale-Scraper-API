@@ -12,7 +12,7 @@
 
 **The fastest zero-login 1688.com (阿里巴巴) China B2B wholesale & factory data extraction suite on Apify (`$1.50 / 1,000 items`) and synchronous REST API (`<500ms` GET on RapidAPI Hub, Zyla API Hub & Apify Standby). Extract Verified Super Factories (超级工厂), tiered CNY volume pricing, MOQ, SKU matrices, Amazon FBA packaging specs (weight/CBM), and photo-to-factory visual search.**
 
-[**🚀 Try Live on Apify**](https://apify.com/unitbytes/1688-scraper?fpr=939u3w&fp_sid=gh_1688) • [**📓 Open in Google Colab**](https://colab.research.google.com/github/unitbytes/1688-Wholesale-Scraper-API/blob/main/notebooks/quickstart.ipynb) • [**⚡ RapidAPI Hub**](https://rapidapi.com/unitbytes/api/1688-wholesale-factory-data1) • [**⚡ Zyla API Hub**](https://zylalabs.com/api-marketplace/commerce+%26+ecommerce/china+b2b+wholesale+and+factory+data+api/14468) • [**⚡ Official n8n Creator Hub**](https://n8n.io/creators/unitbytes/) • [**🔧 39 Free n8n Templates**](https://unitbytes.com/n8n/) • [**📖 Documentation & Schemas**](https://unitbytes.com/actors/) • [**📚 Engineering Playbooks**](https://unitbytes.com/blog/)
+[**🚀 Try Live on Apify**](https://apify.com/unitbytes/1688-scraper?fpr=939u3w&fp_sid=gh_1688) • [**📓 Open in Google Colab**](https://colab.research.google.com/github/unitbytes/1688-Wholesale-Scraper-API/blob/main/notebooks/quickstart.ipynb) • [**⚡ RapidAPI Hub**](https://rapidapi.com/unitbytes/api/1688-wholesale-factory-data1) • [**⚡ Zyla API Hub**](https://zylalabs.com/api-marketplace/commerce+%26+ecommerce/china+b2b+wholesale+and+factory+data+api/14468) • [**⚡ Official n8n Creator Hub**](https://n8n.io/creators/unitbytes/) • [**🔧 41 Free n8n Templates**](https://unitbytes.com/n8n/) • [**📖 Documentation & Schemas**](https://unitbytes.com/actors/) • [**📚 Engineering Playbooks**](https://unitbytes.com/blog/)
 
 </div>
 
@@ -47,7 +47,7 @@ This repository contains ready-to-run **Python SDK scripts**, an **interactive 1
 
 - 📓 **1-Click Interactive Google Colab Notebook:** Open [`notebooks/quickstart.ipynb`](notebooks/quickstart.ipynb) directly in your browser via [**Google Colab ↗**](https://colab.research.google.com/github/unitbytes/1688-Wholesale-Scraper-API/blob/main/notebooks/quickstart.ipynb) to inspect sample DataFrames and test live API queries with zero local setup.
 - 🤖 **Cursor, Windsurf & Claude Code MCP Ready:** Includes [`.cursor/mcp.json`](.cursor/mcp.json) pre-configured with `https://mcp.apify.com` so AI coding agents can invoke these UnitBytes scrapers natively.
-- 💡 **Using n8n?** Explore our official creator profile at **[n8n.io/creators/unitbytes](https://n8n.io/creators/unitbytes/)** or copy all 39 pre-built 9-node scraping workflows (`Ctrl+V`) at **[unitbytes.com/n8n](https://unitbytes.com/n8n/)**.
+- 💡 **Using n8n?** Explore our official creator profile at **[n8n.io/creators/unitbytes](https://n8n.io/creators/unitbytes/)** or copy all 41 pre-built 9-node scraping workflows (`Ctrl+V`) at **[unitbytes.com/n8n](https://unitbytes.com/n8n/)**.
 - 📚 **Engineering Playbooks:** [**APAC Sourcing Playbook**](https://unitbytes.com/blog/how-to-scrape-1688-without-account-sourcing-guide/) • [**Photo-to-Factory Sourcing Playbook**](https://unitbytes.com/blog/1688-image-search-alibaba-b2b-supplier-api-sourcing-guide/) — or browse all guides at **[unitbytes.com/blog](https://unitbytes.com/blog/)**.
 <!-- UNITBYTES_REPO_KIT_END -->
 
@@ -92,9 +92,9 @@ Ultra-fast 1688.com product scraper & price monitor API (from `$0.0015`). Extrac
 | Parameter | Type | Default / Prefill | Description |
 | :--- | :---: | :--- | :--- |
 | `queries` | `array` | `["phone case"]` | List of product keywords to search on 1688.com (e.g., ['phone case', 'smart watch', '蓝牙耳机']). Scrapes multiple keywords in a single run. |
-| `keyword` | `string` | — | Single keyword in English or Chinese (e.g. 'phone case', '手机壳', '蓝牙耳机') or a numeric 1688 offer ID (e.g. '680000000001'). If provided, it is added to the search queries. Ignored if startUrls or offerIds are provided. |
-| `offerIds` | `array` | — | Optional list of numeric 1688 wholesale product offer IDs (e.g. '680000000001', '1015804349214'). Directly extracts full B2B details, tiered volume prices, and SKU matrices for each product without searching. |
-| `startUrls` | `array` | — | Paste any 1688 URLs directly from your browser: direct product offer links (e.g. 'https://detail.1688.com/offer/680000000001.html') or search listing URLs (e.g. 'https://s.1688.com/selloffer/offer_search.htm?keywords=hoodie'). You can also use 'Direct Offer IDs' to enter raw IDs. |
+| `keyword` | `string` | — | Single keyword in English or Chinese (e.g. 'phone case', '手机壳', '蓝牙耳机') or a numeric 1688 offer ID (e.g. '685176373959'). If provided, it is added to the search queries. Ignored if startUrls or offerIds are provided. |
+| `offerIds` | `array` | — | Optional list of numeric 1688 wholesale product offer IDs (e.g. '685176373959', '1015804349214'). Directly extracts full B2B details, tiered volume prices, and SKU matrices for each product without searching. |
+| `startUrls` | `array` | — | Paste any 1688 URLs directly from your browser: direct product offer links (e.g. 'https://detail.1688.com/offer/685176373959.html') or search listing URLs (e.g. 'https://s.1688.com/selloffer/offer_search.htm?keywords=hoodie'). You can also use 'Direct Offer IDs' to enter raw IDs. |
 | `searchUrls` | `array` | — | Optional list of 1688 search listing URLs. Note: you can also paste search URLs directly into 'Start URLs' above. |
 | `maxItems` | `integer` | `30` | Maximum number of wholesale offers to scrape (1 to 10,000). |
 | `resumptionToken` | `string` | — | Optional encrypted resumption token copied from a previous run, Key-Value store, or dataset item. Restores the exact session and continues scraping directly from where it left off without starting over. |
@@ -263,9 +263,9 @@ Yes. You can pass Chinese factory keywords, English product terms, direct 1688 s
   </a>
 </p>
 
-1688 image search & reverse image search API (from `$0.0009/item`). Find direct Chinese suppliers & factories on 1688.com by photo from Amazon FBA, Shopify, AliExpress & Alibaba. Extract wholesale prices, MOQ, SKU matrices & FBA weights with zero login.
+1688 image search & reverse image search API (from `$0.0015/item`). Find direct Chinese suppliers & factories on 1688.com by photo from Amazon FBA, Shopify, AliExpress & Alibaba. Extract wholesale prices, MOQ, SKU matrices & FBA weights with zero login.
 
-- **Pricing:** `$0.0015 / item` (Pay-Per-Event — `$0.0015` visual match listing, `$0.0025` full b2b product detail & spec matrix (volume tiers from `$0.0009`))
+- **Pricing:** `$0.0025 / item` (Pay-Per-Event — `$0.0025` visual match listing, `$0.0035` full b2b product detail & spec matrix (volume tiers from `$0.0015`))
 - **Cloud Console:** [https://apify.com/unitbytes/1688-image-search-scraper?fpr=939u3w&fp_sid=gh_1688](https://apify.com/unitbytes/1688-image-search-scraper?fpr=939u3w&fp_sid=gh_1688)
 - **Full Documentation & Schema:** [https://unitbytes.com/actors/1688-image-search-scraper/](https://unitbytes.com/actors/1688-image-search-scraper/)
 - **n8n Workflow File:** [`n8n/1688-image-search-scraper-n8n-workflow.json`](n8n/1688-image-search-scraper-n8n-workflow.json)
@@ -435,6 +435,6 @@ Don't want to manage API tokens or scripts? **UnitBytes Data Delivery** provides
 
 - 🌐 **Request a Sample Dataset:** [https://unitbytes.com/#enterprise-intake](https://unitbytes.com/#enterprise-intake)
 - 📧 **Direct Engineering Contact:** [contact@unitbytes.com](mailto:contact@unitbytes.com)
-- ⚡ **Explore All 39 Scrapers:** [https://unitbytes.com/actors/](https://unitbytes.com/actors/)
+- ⚡ **Explore All 41 Scrapers:** [https://unitbytes.com/actors/](https://unitbytes.com/actors/)
 - 📚 **Engineering Playbooks & Guides:** [https://unitbytes.com/blog/](https://unitbytes.com/blog/)
 - 🔗 **Official n8n Creator Profile:** [https://n8n.io/creators/unitbytes/](https://n8n.io/creators/unitbytes/)
