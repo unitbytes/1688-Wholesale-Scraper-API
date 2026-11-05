@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.pem
+*.key
+cookies*.json
+sessions*.json
+storage/
+apify_storage/
+.apify/
+.venv/
+venv/
+.DS_Store

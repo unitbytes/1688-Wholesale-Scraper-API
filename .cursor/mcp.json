@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "unitbytes-apify": {
+      "type": "http",
+      "url": "https://mcp.apify.com/?tools=actors,docs,unitbytes/1688-scraper,unitbytes/1688-image-search-scraper"
+    }
+  }
+}

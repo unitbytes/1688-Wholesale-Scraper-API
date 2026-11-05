@@ -1,0 +1,63 @@
+[
+  {
+    "id": "1030000000001",
+    "offerId": "1030000000001",
+    "searchType": "image",
+    "searchImage": "https://img.alicdn.com/img/ibank/O1CN01gQo0hx2LY27U4AagC_!!3937219703-0-C2M.jpg",
+    "imageId": "1393708864958124211",
+    "imageSearchUrl": "https://s.1688.com/youyuan/index.htm?tab=imageSearch&imageId=1393708864958124211",
+    "url": "https://detail.1688.com/offer/1030000000001.html",
+    "title": "GTS15无线蓝牙耳机运动挂耳夹耳式新款适用华为索尼高音质降噪",
+    "price": 20.9,
+    "currency": "CNY",
+    "priceDisplay": "20.90",
+    "minOrderQuantity": 1,
+    "totalStock": 79855,
+    "salesVolume": "5800+件",
+    "bookedCount": 1998,
+    "repurchaseRate": "57%",
+    "repurchasePct": 57.0,
+    "superFactory": false,
+    "factoryInspection": true,
+    "bizType": "生产加工",
+    "tieredPrices": [
+      {
+        "minQuantity": 1,
+        "maxQuantity": null,
+        "price": 20.9,
+        "unit": "件"
+      }
+    ],
+    "pictureUrl": "https://img.alicdn.com/img/ibank/O1CN01yQgnm028qjJjbUhrp_!!2212806287984-0-cib.jpg",
+    "skuMatrix": [
+      {
+        "skuId": "6046270988275",
+        "variant": "旗舰版【柏林音效+超长续航】肤色",
+        "price": 20.9,
+        "stock": 9998,
+        "imageUrl": "https://img.alicdn.com/img/ibank/O1CN01yQgnm028qjJjbUhrp_!!2212806287984-0-cib.jpg"
+      }
+    ],
+    "packaging": [
+      {
+        "skuId": "6046270988275",
+        "variant": "旗舰版【柏林音效+超长续航】肤色",
+        "weightGrams": 110.0,
+        "lengthCm": 12.0,
+        "widthCm": 9.0,
+        "heightCm": 4.0,
+        "volumeCm3": 432.0
+      }
+    ],
+    "supplier": {
+      "companyName": "深圳市创新声学电子有限公司",
+      "name": "深圳市创新声学电子有限公司",
+      "city": "深圳市",
+      "province": "广东",
+      "bizType": "生产加工",
+      "trustPass": true,
+      "shopUrl": "https://winport.m.1688.com/page/index.html?memberId=b2b-220000000000000002"
+    },
+    "detailLevel": "full"
+  }
+]
